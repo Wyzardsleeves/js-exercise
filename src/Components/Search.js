@@ -30,7 +30,7 @@ class Search extends Component{
 
   clear = () => {
     this.refs.searchField.value = ""
-    this.setState({query: "", results: [], pageMax: 0, pageNum: 1, per_page: 20})
+    this.setState({query: "", results: []})
   }
 
   handlePage = (e) => {
@@ -65,7 +65,7 @@ class Search extends Component{
             </div>
             <div className="row">
               <input className="btn" type="submit" value="Search" onClick={this.search} style={{marginRight: "10px"}}/>
-              <input className="btn red lighten-3" type="button" value="Clear" onClick={this.clear} />
+              <input className="btn red lighten-3" type="reset" value="Clear" onClick={this.clear} />
             </div>
           </form>
         </div>

@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="nav-wrapper">
           <Link to="/"><img src={github} height="65"/></Link>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><Link to="https://github.com/Wyzardsleeves/js-exercise"><i className="ion-social-github black-text"></i></Link></li>
+            <li><a href="https://github.com/Wyzardsleeves/js-exercise" target="_blank"><i className="ion-social-github black-text"></i></a></li>
           </ul>
         </div>
       </section>
